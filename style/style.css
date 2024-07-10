@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  padding-top: 1em;
+
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 3rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar i {
+  display: none;
+}
+
+/* section1 backgroundimage */
+.hero-section {
+  background-image: url("../images/hero-img.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  height: 100vh;
+
+}
+
+.hero-box {
+  width: 25rem;
+  height: 17rem;
+  padding-top: 1em ; 
+  border-radius: 0px 20px 20px 0px;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: 20%;
+  
+}
+
+.hero-box h1 {
+  font-size: 30px;
+  margin-left: 1em;
+  margin-bottom: 0.8em;  
+}
+
+.hero-box p {
+   font-size: 15px; 
+  margin-left: 1.8em; 
+}
+
+/* hero section2  styling */
+.hero-section2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.images1-section2,
+.images2-section2 {
+  display: flex;
+}
+
+.images1-section2 img:nth-of-type(1) {
+  border-top-left-radius: 60px;
+}
+
+.images2-section2 img:nth-of-type(1) {
+  border-bottom-left-radius: 60px;
+}
+
+.images,
+.section-2-future {
+  width: 100%;
+}
+
+.images1-section2 img,
+.images2-section2 img {
+  width: 50%;
+}
+
+.section-2-future {
+  background: #F2F0F2;
+  padding: 4.5em 4.5em;
+  border-radius: 0px 60px 60px 0px;
+}
+
+.section2-h2 {
+  font-size: 30px;
+ 
+}
+
+.section2-p {
+  font-size: 12px;
+
+}
+
+/* section3 styling */
+
+.section-3-id-acq {
+  height: 77vh;
+  
+}
+
+.section3 {
+  margin-top:1em ;
+  margin-bottom: 0.5em ;
+  text-align: center;
+ 
+}
+
+.section3 h1 {
+  font-weight: 700;
+  font-size: 30px;
+
+}
+
+.section3 h6 {
+  font-size: 9px;
+  text-align: center;
+  color: #181A18;
+  margin-top: 0.5rem;
+}
+
+.cards {
+  display: flex;
+  margin-top: 3rem;
+   gap: 1em; 
+
+}
+
+.card {
+  width: 100%;
+  border-radius: 20px 20px 20px 20px;
+  background: #E2F1E8;
+  padding: 2em 2em;
+}
+
+.card i {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.cards h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #181A18;
+
+}
+
+.cards p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 1em;
+
+}
+
+
+/* tablet screen */
+@media(max-width: 900px) {
+  
+
+  .images,.section-2-future{
+ width: 100%;
+  }
+
+  .images1-section2 img:nth-of-type(1) {
+    border-top-left-radius: 30px;
+  }
+
+  .images2-section2 img:nth-of-type(1) {
+    border-bottom-left-radius: 30px;
+  }
+
+  .section-2-future {
+    background: #F2F0F2;
+    padding: 3rem 3rem;
+    border-radius: 0px 40px 40px 0px;
+  }
+
+  .section2-h2 {
+    font-size: 20px;
+    padding-bottom: 2rem;
+  }
+
+  .section2-p {
+    font-size: 10px;
+  }
+
+  .hero-box {
+    max-width: 19rem;
+    height: 13rem;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    bottom: 15%;
+  }
+
+  .hero-box h1 {
+    font-size: 30px;
+  }
+
+  .hero-box p {
+    font-size: 12px;
+  }
+
+
+  .section-3-id-acq {
+    height: 40vh;
+  }
+
+  .section3 {
+    width: 100%;
+  }
+
+  .section3 h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 23px;
+
+  }
+
+  .section3 h6 {
+    font-size: 9px;
+    text-align: center;
+    color: #181A18;
+    margin-top: 1rem;
+  }
+
+  .cards{
+      grid-template-columns:repeat(2,1fr);
+      grid-template-rows: repeat(2, 1fr);
+     
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    background: #E2F1E8;
+    margin-bottom: 1em;
+  }
+
+  .card i {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .card h4 {
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 32px;
+    color: #181A18;
+
+  }
+
+  .card p {
+    font-size: 13px;
+    font-weight: 300px;
+    line-height: 20px;
+    padding-top: 1rem;
+
+  }
+}
+
+
+/* Mobile screen*/
+@media(max-width: 500px) {
+
+  .nav-bar ul {
+    display: none;
+  }
+
+  .nav-bar i {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .hero-box {
+    width: 800px;
+   height: 140px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 18%;
+    margin-top: 1.7em;
+ }
+
+  .hero-box h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .hero-box p {
+    font-size: 13px;
+  }
+
+  .hero-section {
+    background-image: url("../images/hero-img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 425px;
+    height: 450px;
+    margin-top: 10px;
+  }
+
+
+  .hero-section2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5em;
+
+  }
+
+  .images,.section-2-future {
+    width: 100%;
+     }
+
+  .images1-section2,
+  .images2-section2 {
+    display: flex;
+  }
+
+  .images2-section2 img:nth-of-type(1),.section-2-future{
+    border-radius: 0%;
+  }
+
+  .images1-section2 img:nth-of-type(1) {
+    border-top-left-radius: 20px;
+  }
+
+  .images1-section2 img:nth-of-type(2) {
+    border-top-right-radius: 20px;
+  }
+
+  .images1-section2 img,
+  .images2-section2 img {
+    width: 50%;
+  }
+
+
+  .section-2-future {
+    padding-left: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+  }
+
+  .section-2-future h2 {
+    font-weight: larger;
+    font-size: 900;
+   
+  }
+
+
+  .section3 h1 {
+    font-weight: bold;
+  }
+
+
+  .section-3-id-acq {
+     height: 77vh;
+
+  }
+
+  .section3{
+    width: 343px;
+    font-size: 15px;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.8em;
+  }
+
+  .card{
+    width: 350px;
+  }
+  
+ 
+}
